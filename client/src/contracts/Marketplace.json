@@ -1,0 +1,189 @@
+{
+  "contractName": "Marketplace",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Marketplace.sol\":\"Marketplace\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Marketplace.sol\":{\"keccak256\":\"0x215e079cd4f5f5571229dcdd3db3b3149ec43a23a9729a7a77f0fbe575bd8cd4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://161b00e9cb41f58b54d8001e844e6bd3e39c7f7c62fc4157de2040ad8e8618ee\",\"dweb:/ipfs/QmRd35ueVC3bx6An1Nk3XxPgX3Hcy1sCwdQJpZCWYKydGP\"]}},\"version\":1}",
+  "bytecode": "0x608060405260008055348015601357600080fd5b50603f8060216000396000f3fe6080604052600080fdfea26469706673582212204b69c4ebe39d012c435d7295fdd5db853b860f0a5ae86ab8785bd20faa3b107464736f6c634300080e0033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212204b69c4ebe39d012c435d7295fdd5db853b860f0a5ae86ab8785bd20faa3b107464736f6c634300080e0033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "66:159:1:-:0;;;128:1;94:35;;66:159;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "66:159:1:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Marketplace {\n\n    uint availableFundsForCampaigns = 0;\n\n    struct Campaign {\n        address influencer;\n        uint availableFunds;\n    }\n\n    \n\n}",
+  "sourcePath": "/home/kevin/magistrska/truffle/contracts/Marketplace.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Marketplace.sol",
+    "exportedSymbols": {
+      "Marketplace": [
+        178
+      ]
+    },
+    "id": 179,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 169,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:32:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Marketplace",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 178,
+        "linearizedBaseContracts": [
+          178
+        ],
+        "name": "Marketplace",
+        "nameLocation": "75:11:1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 172,
+            "mutability": "mutable",
+            "name": "availableFundsForCampaigns",
+            "nameLocation": "99:26:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 178,
+            "src": "94:35:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 170,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "94:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "30",
+              "id": 171,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "128:1:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "internal"
+          },
+          {
+            "canonicalName": "Marketplace.Campaign",
+            "id": 177,
+            "members": [
+              {
+                "constant": false,
+                "id": 174,
+                "mutability": "mutable",
+                "name": "influencer",
+                "nameLocation": "170:10:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 177,
+                "src": "162:18:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 173,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "162:7:1",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 176,
+                "mutability": "mutable",
+                "name": "availableFunds",
+                "nameLocation": "195:14:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 177,
+                "src": "190:19:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 175,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "190:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Campaign",
+            "nameLocation": "143:8:1",
+            "nodeType": "StructDefinition",
+            "scope": 178,
+            "src": "136:80:1",
+            "visibility": "public"
+          }
+        ],
+        "scope": 179,
+        "src": "66:159:1",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:193:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.14+commit.80d49f37.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.8",
+  "updatedAt": "2022-07-15T03:49:33.166Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
